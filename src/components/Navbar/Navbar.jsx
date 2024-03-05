@@ -88,16 +88,6 @@ function NavBar() {
                 <CgFileDocument style={{ marginBottom: "1px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/contact"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineContacts style={{ marginBottom: "1px" }} /> Contact Me
-              </Nav.Link>
-            </Nav.Item>
             <Nav.Item>
               <Nav.Link
                 as={Link}

@@ -9,7 +9,7 @@ const Github = () => {
         Days I <strong className="yellow">Code</strong>
       </h1>
       <GitHubCalendar
-        username="Infinit2209"
+        username="Infinity2209"
         blockSize={15}
         blockMargin={5}
         color="#6102ce"

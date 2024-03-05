@@ -7,19 +7,21 @@ import {
   DiGit,
 } from "react-icons/di";
 import {
-  SiMaterialui,
-  SiGraphql,
-  SiSolidity,
-  SiRedux,
-  SiMongodb,
-  SiHtml5
+  SiHtml5,
+  SiPython
 } from "react-icons/si";
-
+import { 
+  FaCss3Alt,
+  FaJava
+} from "react-icons/fa";
 const Techstack = () => {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
         <SiHtml5 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaCss3Alt />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
@@ -31,19 +33,13 @@ const Techstack = () => {
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiRedux />
+        C
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMongodb />
+        <FaJava />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiGraphql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMaterialui />
+        <SiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
