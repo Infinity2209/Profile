@@ -10,7 +10,6 @@ import {
   // AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
-  AiOutlineContacts
 } from "react-icons/ai";
 import { GiSkills } from "react-icons/gi"
 import { CgFileDocument } from "react-icons/cg";
@@ -86,15 +85,6 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "1px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/quotes"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineContacts style={{ marginBottom: "1px" }} /> My Quotes
               </Nav.Link>
             </Nav.Item>
           </Nav>
