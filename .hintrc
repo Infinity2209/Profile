@@ -11,5 +11,8 @@
     "not safari <= 17.1",
     "not firefox <= 121",
     "not safari <= 17.2"
-  ]
+  ],
+  "hints": {
+    "apple-touch-icons": "off"
+  }
 }
