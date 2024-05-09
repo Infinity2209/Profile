@@ -375,9 +375,9 @@ button:focus {
   width: 40px;
   height: 40px;
   text-align: center;
-  font-size: 1.2em;
-  line-height: 2em;
-  background: rgba(110, 110, 110, 0.972);
+  justify-content: center;
+  font-size: 1.3em;
+  background: rgb(89, 88, 88);
   border-radius: 50%;
   transition: 0.5s;
 }
@@ -483,11 +483,11 @@ button:focus {
   padding: 10px;
   opacity: 0.93;
   border: 1.7px solid #00fafa;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   text-align: center;
   border-radius: 5px;
   display: table;
-  box-shadow: 4px 5px 4px 3px #00fafa44;
+  box-shadow: 4px 5px 4px 3px #00fafaa3;
   overflow: hidden;
   transition: all 0.4s ease 0s;
 }
