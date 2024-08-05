@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { AiOutlineDownload } from "react-icons/ai";
-import Particle from '../components/Particle'
-
+import Particle from '../components/Particle';
+import Resumefile from '../assets/ANANTA-CV.pdf';
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-const resumeLink = "https://raw.githubusercontent.com/Infinity2209/Profile/main/src/assets/ANANTA-CV.pdf";
+const resumeLink = Resumefile;
 
 const Resume = () => {
   const [width, setWidth] = useState(700);
