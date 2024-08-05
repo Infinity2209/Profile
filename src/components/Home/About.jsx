@@ -32,7 +32,7 @@ const About = () => {
               I enjoy tackling new challenges and continuously expanding my skillset.
               <br />
               <br />I am proficient in
-              <b className="yellow"> HTML and CSS, </b>
+              <b className="yellow"> HTML, CSS and JavaScript, </b>
               as well as have knowledge in programming languages such as C, Java, Python,
               <b className="yellow"> React.</b>
               <br />

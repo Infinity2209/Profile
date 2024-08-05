@@ -8,7 +8,8 @@ import {
 } from "react-icons/di";
 import {
   SiHtml5,
-  SiPython
+  SiPython,
+  SiAmazonaws
 } from "react-icons/si";
 import { 
   FaCss3Alt,
@@ -43,6 +44,9 @@ const Techstack = () => {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAmazonaws />
       </Col>
     </Row>
   );

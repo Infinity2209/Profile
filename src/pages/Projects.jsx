@@ -42,7 +42,7 @@ const Projects = () => {
               imgPath={internship}
               isBlog={false}
               title="Internship Project"
-              description="During my internship, I actively contributed to various projects by collaborating with a team to implement code from various websites. I played a key role in designing user interfaces for multiple websites, ensuring they were visually appealing and user-friendly. Additionally, I developed new functionalities to enhance website performance and user engagement. My problem-solving skills were put to the test as I successfully resolved issues encountered across different websites, showcasing adaptability and a proactive approach in a fast-paced work environment. Overall, my internship experience involved a diverse range of tasks, from coding and design to problem-solving and collaboration, contributing significantly to the success of multiple projects."
+              description="During my internship, I actively contributed to various projects by collaborating with a team to implement code from various websites. I played a key role in designing user interfaces for multiple websites, ensuring they were visually appealing and user-friendly. Additionally, I developed new functionalities to enhance website performance and user engagement. Overall, my internship experience involved a diverse range of tasks, from coding and design to problem-solving and collaboration, contributing significantly to the success of multiple projects."
               ghLink="https://github.com/Intelligent-Cloud-Applications"
             />
           </Col>
