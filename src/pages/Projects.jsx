@@ -5,6 +5,8 @@ import Particle from "../components/Particle";
 import project from "../assets/projects/student.png";
 import note from "../assets/projects/noteapp.png";
 import internship from "../assets/projects/kickstart.png";
+import DSA from "../assets/projects/dsa img.gif";
+import ReactCalculator from "../assets/projects/Calculator.png";
 
 const Projects = () => {
   return (
@@ -17,17 +19,17 @@ const Projects = () => {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+        <Row style={{ justifyContent: "space-between", paddingBottom: "10px" }}>
+          <Col md={5} className="project-card mx-4">
             <ProjectCard
-            imgPath={note}
+              imgPath={note}
               title="Note Taking App"
               description="The note-taking app provides users with a convenient platform to securely store and manage their important notes, documents, and images. Through seamless integration with AWS console, users can easily access their data from anywhere with an internet connection, ensuring flexibility and convenience. This app empowers users to efficiently organize their information, thereby enhancing productivity and offering peace of mind regarding data security."
               ghLink="https://github.com/Infinity2209/serverless-stack-client"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={5} className="project-card mx-4">
             <ProjectCard
               imgPath={project}
               isBlog={false}
@@ -37,7 +39,17 @@ const Projects = () => {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={5} className="project-card mx-4">
+            <ProjectCard
+              imgPath={ReactCalculator}
+              isBlog={false}
+              title="React Calculator"
+              description="I have developed a fully functional calculator application using React, showcasing my proficiency in modern web development practices. This project includes standard arithmetic operations, a clear user interface, and responsive design principles to ensure usability across various devices. By leveraging React's component-based architecture, I have created a modular and maintainable codebase. This project demonstrates my ability to build interactive user interfaces, manage state effectively, and apply best practices in React development."
+              ghLink="https://github.com/Infinity2209/DSA"
+            />
+          </Col>
+
+          <Col md={5} className="project-card mx-4">
             <ProjectCard
               imgPath={internship}
               isBlog={false}
@@ -46,6 +58,18 @@ const Projects = () => {
               ghLink="https://github.com/Intelligent-Cloud-Applications"
             />
           </Col>
+
+          <Col md={5} className="project-card mx-4">
+            <ProjectCard
+              imgPath={DSA}
+              isBlog={false}
+              title="DSA Algorithms"
+              description="I have undertaken an extensive project to code all the core algorithms and data structures in C programming language. This project involved designing, implementing, and optimizing various algorithms such as sorting, searching, and dynamic programming techniques, along with fundamental data structures including arrays, linked lists, stacks, queues, trees, graphs, and hash tables. Emphasis was placed on optimizing these implementations to enhance their efficiency in terms of time and space complexity. Each component is thoroughly documented and rigorously tested to ensure correctness and robustness, making this project a comprehensive showcase of my proficiency in both data structures and algorithms and the C programming language."
+              ghLink="https://github.com/Infinity2209/DSA"
+            />
+          </Col>
+
+          
         </Row>
       </Container>
     </Container>

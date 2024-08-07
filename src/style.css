@@ -95,7 +95,7 @@ button:focus {
   display: block;
   background-color: #00fafa;
   height: 4px;
-  width: 27px;
+  width: 30px;
   margin-top: 5px;
   margin-bottom: 5px;
   transform: rotate(0deg);
@@ -159,13 +159,13 @@ button:focus {
 
 .navbar-nav .nav-link {
   color: white;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  /* padding-right: 1rem;
+  padding-left: 1rem; */
 }
-
+/* 
 .nav-link {
   padding: 0.8rem 1rem;
-}
+} */
 
 @media (max-width: 768px) {
   .nav-link {
@@ -630,4 +630,3 @@ button:focus {
     transform: scale(1);
   }
 }
-
