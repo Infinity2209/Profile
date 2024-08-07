@@ -8,8 +8,6 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
-
-
 const About = () => {
   return (
     <Container fluid className="home-about-section" id="about">
