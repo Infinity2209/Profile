@@ -9,6 +9,7 @@ import DSA from "../assets/projects/dsa img.gif";
 import ReactCalculator from "../assets/projects/Calculator.png";
 import Tic from "../assets/projects/Tic-Tac-Toe.png";
 import Rock from "../assets/projects/Rock.png";
+import Stop from "../assets/projects/Stop.png";
 
 const Projects = () => {
   const details = [
@@ -29,6 +30,12 @@ const Projects = () => {
       "title": "Tic-Tac-Toe Game",
       "description": `I developed a fully functional Tic Tac Toe game using HTML, CSS, and JavaScript. The game offers a simple and interactive interface where two players can take turns marking "X" or "O" on a 3x3 grid. The game dynamically updates based on the player's moves and determines the winner or if the game results in a draw. The core logic is powered by JavaScript, ensuring smooth gameplay, while the design and user interface are styled with CSS for a clean and responsive experience. This project showcases my ability to create engaging, real-time interactive applications using front-end technologies.`,
       "ghLink": "https://github.com/Infinity2209/Tic-Tac-Toe-Game"
+    },
+    {
+      "imgPath": Stop,
+      "title": "Stop Watch",
+      "description": `This React-based stopwatch application provides users with an intuitive interface to track time with start, stop, reset, and lap functionalities. Built to demonstrate proficiency in React hooks and state management, the app efficiently tracks laps while ensuring accurate timing. The clean, responsive design enables easy use on both desktop and mobile devices. This project showcases effective use of React for dynamic component updates, as well as optimized performance for a smooth user experience, making it ideal for time-tracking needs in personal fitness or productivity.`,
+      "ghLink": "https://github.com/Infinity2209/StopWatch"
     },
     {
       "imgPath": Rock,
