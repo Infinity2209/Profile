@@ -10,6 +10,7 @@ import ReactCalculator from "../assets/projects/Calculator.png";
 import Tic from "../assets/projects/Tic-Tac-Toe.png";
 import Rock from "../assets/projects/Rock.png";
 import Stop from "../assets/projects/Stop.png";
+import TODO from "../assets/projects/myTask.png";
 
 const Projects = () => {
   const details = [
@@ -24,6 +25,12 @@ const Projects = () => {
       "title": "Note Taking App",
       "description": "The note-taking app provides users with a convenient platform to securely store and manage their important notes, documents, and images. Through seamless integration with AWS console, users can easily access their data from anywhere with an internet connection, ensuring flexibility and convenience. This app empowers users to efficiently organize their information, thereby enhancing productivity and offering peace of mind regarding data security.",
       "ghLink": "https://github.com/Infinity2209/serverless-stack-client"
+    },
+    {
+      "imgPath": TODO,
+      "title": "TODO LIST",
+      "description": "A feature-rich web application built using React and Node.js, enabling users to efficiently manage tasks. Features include adding, editing, deleting tasks, status updates (To-Do, In Progress, Completed), sorting by due date or status, and filtering tasks. Integrated with a RESTful API for seamless backend operations, ensuring a smooth and user-friendly experience.",
+      "ghLink": "https://github.com/Infinity2209/TODO-LIST"
     },
     {
       "imgPath": Tic,
