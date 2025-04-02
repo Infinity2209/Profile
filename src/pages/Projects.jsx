@@ -5,6 +5,7 @@ import Particle from "../components/Particle";
 import project from "../assets/projects/student.png";
 import note from "../assets/projects/noteapp.png";
 import keeper from "../assets/projects/keeper.png";
+import hotel from "../assets/projects/Hotel.png";
 import internship from "../assets/projects/kickstart.png";
 import DSA from "../assets/projects/dsa img.gif";
 import ReactCalculator from "../assets/projects/Calculator.png";
@@ -31,6 +32,12 @@ const Projects = () => {
       "imgPath": keeper,
       "title": "Keeper App",
       "description": "Our Image Conversion & Manipulation Tool simplifies real-time image format conversion, resizing, cropping, and optimization within React applications. Built with a component-based architecture, it leverages react-image-file-resizer, Jimp, and react-to-pdf for seamless processing. Secure AWS S3 storage and Lambda functions ensure scalability, while Base64 encoding enables real-time rendering. Designed for developers, this tool reduces server load and supports future enhancements like batch processing and AI-powered image recognition.",
+      "ghLink": "https://github.com/Infinity2209/Keeper-App-Frontend-"
+    },
+    {
+      "imgPath": hotel,
+      "title": "Hotel Landing Page",
+      "description": "Designed and developed a sleek, responsive hotel landing page using Next.js, showcasing elegant UI/UX for a seamless user experience. The template features an engaging hero section, intuitive navigation, dynamic content rendering, and optimized performance for fast loading speeds. Integrated modern design elements to enhance visual appeal while ensuring mobile responsiveness and accessibility. Perfect for hotels, resorts, or vacation rentals looking to establish a strong online presence.",
       "ghLink": "https://github.com/Infinity2209/Keeper-App-Frontend-"
     },
     {
