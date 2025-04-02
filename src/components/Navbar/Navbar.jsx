@@ -12,7 +12,7 @@ import {
   AiOutlineFundProjectionScreen,
 } from "react-icons/ai";
 import { GiSkills } from "react-icons/gi"
-import { CgFileDocument } from "react-icons/cg";
+// import { CgFileDocument } from "react-icons/cg";
 
 
 function NavBar() {
@@ -78,7 +78,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/resume"
@@ -86,7 +86,7 @@ function NavBar() {
               >
                 <CgFileDocument style={{ marginBottom: "1px" }} /> Resume
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

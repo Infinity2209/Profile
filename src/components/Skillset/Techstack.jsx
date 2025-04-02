@@ -9,12 +9,16 @@ import {
 import {
   SiHtml5,
   SiPython,
-  SiAmazonaws
+  SiAmazonaws,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiBootstrap
 } from "react-icons/si";
 import { 
   FaCss3Alt,
   FaJava
 } from "react-icons/fa";
+
 const Techstack = () => {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
@@ -47,6 +51,15 @@ const Techstack = () => {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiAmazonaws />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiTailwindcss />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNextdotjs />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiBootstrap />
       </Col>
     </Row>
   );

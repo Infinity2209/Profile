@@ -9,7 +9,7 @@ import {
 import Home from './pages/Home'
 import Skill from './pages/Skillset'
 import Project from './pages/Projects'
-import Resume from './pages/Resume'
+// import Resume from './pages/Resume'
 
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -41,7 +41,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/skillset" element={<Skill />} />
           <Route path="/project" element={<Project />} />
-          <Route path="/resume" element={<Resume />} />
+          {/* <Route path="/resume" element={<Resume />} /> */}
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
