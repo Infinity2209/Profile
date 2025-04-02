@@ -4,6 +4,7 @@ import ProjectCard from "../components/Projects/ProjectCard";
 import Particle from "../components/Particle";
 import project from "../assets/projects/student.png";
 import note from "../assets/projects/noteapp.png";
+import keeper from "../assets/projects/keeper.png";
 import internship from "../assets/projects/kickstart.png";
 import DSA from "../assets/projects/dsa img.gif";
 import ReactCalculator from "../assets/projects/Calculator.png";
@@ -25,6 +26,12 @@ const Projects = () => {
       "title": "Note Taking App",
       "description": "The note-taking app provides users with a convenient platform to securely store and manage their important notes, documents, and images. Through seamless integration with AWS console, users can easily access their data from anywhere with an internet connection, ensuring flexibility and convenience. This app empowers users to efficiently organize their information, thereby enhancing productivity and offering peace of mind regarding data security.",
       "ghLink": "https://github.com/Infinity2209/serverless-stack-client"
+    },
+    {
+      "imgPath": keeper,
+      "title": "Keeper App",
+      "description": "Our Image Conversion & Manipulation Tool simplifies real-time image format conversion, resizing, cropping, and optimization within React applications. Built with a component-based architecture, it leverages react-image-file-resizer, Jimp, and react-to-pdf for seamless processing. Secure AWS S3 storage and Lambda functions ensure scalability, while Base64 encoding enables real-time rendering. Designed for developers, this tool reduces server load and supports future enhancements like batch processing and AI-powered image recognition.",
+      "ghLink": "https://github.com/Infinity2209/Keeper-App-Frontend-"
     },
     {
       "imgPath": TODO,
