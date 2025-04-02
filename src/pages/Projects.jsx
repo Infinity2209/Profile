@@ -38,7 +38,7 @@ const Projects = () => {
       "imgPath": hotel,
       "title": "Hotel Landing Page",
       "description": "Designed and developed a sleek, responsive hotel landing page using Next.js, showcasing elegant UI/UX for a seamless user experience. The template features an engaging hero section, intuitive navigation, dynamic content rendering, and optimized performance for fast loading speeds. Integrated modern design elements to enhance visual appeal while ensuring mobile responsiveness and accessibility. Perfect for hotels, resorts, or vacation rentals looking to establish a strong online presence.",
-      "ghLink": "https://github.com/Infinity2209/Keeper-App-Frontend-"
+      "ghLink": "https://github.com/Infinity2209/Hotel-Landing-site"
     },
     {
       "imgPath": TODO,
