@@ -9,6 +9,10 @@ html {
   --imp-bold-text-color: #00fafa;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .yellow {
   color: var(--imp-bold-text-color);
 }
@@ -48,6 +52,7 @@ button:focus {
 
 ::-webkit-scrollbar {
   width: 7px;
+  height: 7px;
 }
 
 /* Track */
@@ -539,10 +544,10 @@ button:focus {
 }
 
 .project-card {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   height: auto;
 }
 

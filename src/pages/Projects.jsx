@@ -13,6 +13,7 @@ import Tic from "../assets/projects/Tic-Tac-Toe.png";
 import Rock from "../assets/projects/Rock.png";
 import Stop from "../assets/projects/Stop.png";
 import TODO from "../assets/projects/myTask.png";
+import videoEditor from "../assets/projects/videoEditor.png";
 
 const Projects = () => {
   const details = [
@@ -39,6 +40,25 @@ const Projects = () => {
       "title": "Hotel Landing Page",
       "description": "Designed and developed a sleek, responsive hotel landing page using Next.js, showcasing elegant UI/UX for a seamless user experience. The template features an engaging hero section, intuitive navigation, dynamic content rendering, and optimized performance for fast loading speeds. Integrated modern design elements to enhance visual appeal while ensuring mobile responsiveness and accessibility. Perfect for hotels, resorts, or vacation rentals looking to establish a strong online presence.",
       "ghLink": "https://github.com/Infinity2209/Hotel-Landing-site"
+    },
+    {
+      "imgPath": videoEditor,
+      "title": "Video Editor Frontend Application",
+      "description": `This project is a feature-rich, responsive web-based video editor built using Next.js, React, Redux Toolkit, and Tailwind CSS. It offers a clean, modular interface where users can:
+
+📤 Upload videos in various formats (MP4, MOV, WebM, AVI) with real-time progress and preview.
+
+🎞️ Edit timelines by trimming, arranging clips, and syncing elements visually with a dynamic timeline view.
+
+✍️ Add and manage subtitles with styling options, and define start/end timestamps for precise control.
+
+🖼️ Overlay images on the video and customize their position, size, rotation, opacity, and borders.
+
+🔊 Control audio tracks, mute/unmute original audio, and add background music layers.
+
+📦 Export final videos with options to choose resolution (up to 4K), format (MP4, WebM, GIF), and include overlays or subtitles.`,
+
+      "ghLink": "https://github.com/Infinity2209/Vedio-Editing-Website"
     },
     {
       "imgPath": TODO,
@@ -84,9 +104,9 @@ const Projects = () => {
     },
   ]
   return (
-    <Container fluid className="project-section">
+    <Container fluid className="project-section w-full">
       <Particle />
-      <Container>
+      <Container fluid style={{ marginLeft: 0, marginRight: 0}}>
         <h1 className="project-heading">
           Recent Top <strong className="yellow">Works </strong>
         </h1>
@@ -95,7 +115,7 @@ const Projects = () => {
         </p>
         <Row style={{ justifyContent: "space-between", paddingBottom: "10px" }}>
           {details.map((data, index) => (
-            <Col md={5} className="project-card mx-4" key={index}>
+            <Col md={4} className="project-card " key={index}>
               <ProjectCard
                 imgPath={data.imgPath}
                 title={data.title}

@@ -9,7 +9,7 @@ import logo from "../../assets/sLogo.png";
 
 const Footer = () => {
     return (
-      <Container fluid className="footer">
+      <Container fluid className="footer" style={{ marginLeft: 0, marginRight: 0 }}>
         <Row>
           <Col md="4" className="footer-copywright">
             <span>Dedicated to creating impactful solutions!</span>

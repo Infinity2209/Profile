@@ -10,7 +10,7 @@ const Skillset = () => {
   return (
     <Container fluid className="about-section">
       <Particle />
-      <Container>
+      <Container fluid style={{ marginLeft: 0, marginRight: 0 }}>
         <h1 className="project-heading">
           Professional <strong className="yellow">Skillset </strong>
         </h1>
