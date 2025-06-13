@@ -13,6 +13,9 @@ import Tic from "../assets/projects/Tic-Tac-Toe.png";
 import Rock from "../assets/projects/Rock.png";
 import Stop from "../assets/projects/Stop.png";
 import TODO from "../assets/projects/myTask.png";
+import book from "../assets/projects/book.png";
+import framer from "../assets/projects/framer.png";
+import health from "../assets/projects/health.png";
 import videoEditor from "../assets/projects/videoEditor.png";
 
 const Projects = () => {
@@ -34,6 +37,24 @@ const Projects = () => {
       "title": "Keeper App",
       "description": "Our Image Conversion & Manipulation Tool simplifies real-time image format conversion, resizing, cropping, and optimization within React applications. Built with a component-based architecture, it leverages react-image-file-resizer, Jimp, and react-to-pdf for seamless processing. Secure AWS S3 storage and Lambda functions ensure scalability, while Base64 encoding enables real-time rendering. Designed for developers, this tool reduces server load and supports future enhancements like batch processing and AI-powered image recognition.",
       "ghLink": "https://github.com/Infinity2209/Keeper-App-Frontend-"
+    },
+    {
+      "imgPath": book,
+      "title": "Book Club Management System",
+      "description": "Built a full-stack web application that enables users to discover and join book clubs, and allows organizers to manage clubs and book selections. Implemented features like club listing, real-time open spot updates, search/filter by genre and organizer, and admin tools for managing club details and current reads. Focused on user-friendly UI and efficient data handling.",
+      "ghLink": "https://github.com/Infinity2209/Book-Club-Management-System"
+    },
+    {
+      "imgPath": framer,
+      "title": "Framer Design",
+      "description": "Developed a multi-section React-based web application using Create React App, featuring reusable components like Navbar, Hero, Features, FAQ, Testimonials, and Footer. Focused on building a clean, responsive UI for showcasing services or products. Includes optimized production build setup and support for future scalability.",
+      "ghLink": "https://github.com/Infinity2209/framer_design"
+    },
+    {
+      "imgPath": health,
+      "title": "Health Care Dashboard",
+      "description": "Developed a responsive healthcare dashboard using React and Tailwind CSS to visualize health metrics and manage appointments. Features include an interactive human body model, health metric cards, activity charts, calendar views, and appointment tracking. Focused on delivering a clean UI and seamless user experience with modern React tools and testing using Jest and React Testing Library.",
+      "ghLink": "https://github.com/Infinity2209/healthcareDashboard"
     },
     {
       "imgPath": hotel,
