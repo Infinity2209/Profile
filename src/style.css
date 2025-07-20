@@ -424,6 +424,11 @@ button:focus {
   padding-left: 15px;
 }
 
+.social-icons svg{
+  padding: 0;
+  glyph-orientation-horizontal: center;
+}
+
 .icon-colour {
   color: #01ffdd;
 }
