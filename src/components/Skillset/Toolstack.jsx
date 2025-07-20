@@ -3,7 +3,8 @@ import { Col, Row } from "react-bootstrap";
 import {
   SiVisualstudiocode,
   SiNetlify,
-  SiCanva
+  SiCanva,
+  SiGithub,
 } from "react-icons/si";
 import { FaFigma } from "react-icons/fa";
 
@@ -16,6 +17,7 @@ const Toolstack = () => {
     { icon: <SiCanva />, name: "Canva" },
     { icon: <SiNetlify />, name: "Netlify" },
     { icon: <SiCloudflare />, name: "Cloudflare" },
+    { icon: <SiGithub />, name: "GitHub" },
   ];
 
   return (
