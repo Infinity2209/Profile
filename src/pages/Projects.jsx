@@ -17,6 +17,10 @@ import book from "../assets/projects/book.png";
 import framer from "../assets/projects/framer.png";
 import health from "../assets/projects/health.png";
 import videoEditor from "../assets/projects/videoEditor.png";
+import notesSummarizer from "../assets/projects/noteSummarizer.png";
+import aiEmailGenerator from "../assets/projects/aiEmailGenerator.png";
+import Abnormal from "../assets/projects/Abnormal.png";
+import bikeVlog from "../assets/projects/bikeVlog.png";
 
 const Projects = () => {
   const details = [
@@ -37,6 +41,30 @@ const Projects = () => {
       "title": "Keeper App",
       "description": "Our Image Conversion & Manipulation Tool simplifies real-time image format conversion, resizing, cropping, and optimization within React applications. Built with a component-based architecture, it leverages react-image-file-resizer, Jimp, and react-to-pdf for seamless processing. Secure AWS S3 storage and Lambda functions ensure scalability, while Base64 encoding enables real-time rendering. Designed for developers, this tool reduces server load and supports future enhancements like batch processing and AI-powered image recognition.",
       "ghLink": "https://github.com/Infinity2209/Keeper-App-Frontend-"
+    },
+    {
+      "imgPath": notesSummarizer,
+      "title": "Notes Summarizer",
+      "description": "A smart web-based tool designed to simplify note-taking and studying. The application allows users to upload text or Word files containing notes and instantly generates a concise summary with just one click. The generated summary is editable, providing flexibility to refine the content as needed. Users can also copy the summarized text with a single click or send it directly to a predefined email address for easy sharing. This project demonstrates skills in file handling, text processing, and seamless integration of interactive features for improved productivity.",
+      "ghLink": "https://github.com/Infinity2209/notes-summarizer"
+    },
+    {
+      "imgPath": aiEmailGenerator,
+      "title": "AI Email Generator",
+      "description": "An AI-powered tool that streamlines professional communication by generating well-structured emails from simple prompts. The application takes a user-provided prompt as input and automatically creates both the email content and subject line. Users can edit the generated content for customization before sending. By entering a recipient’s email address and clicking “Send,” the application delivers the email directly to the specified inbox. This project highlights expertise in AI integration, natural language processing, and building interactive user-focused applications with editing and email delivery capabilities.",
+      "ghLink": "https://github.com/Infinity2209/ai-email-generator"
+    },
+    {
+      "imgPath": Abnormal,
+      "title": "Abnormal Security Hub",
+      "description": "A full-stack file management system built with Django REST Framework (backend) and React (frontend). The application allows users to upload, list, delete, and download files through an intuitive web interface. The backend handles secure file storage and management, while the frontend communicates with the API to provide a seamless user experience.The project is containerized using Docker Compose, enabling both backend and frontend services to run together effortlessly. Environment variables are configured to manage API communication, and CORS policies are set up for smooth development and deployment.This project highlights proficiency in full-stack development, RESTful API design, containerization, and integration of backend services with a modern frontend framework.",
+      "ghLink": "https://github.com/Infinity2209/Abnormal-sequrity-hub"
+    },
+    {
+      "imgPath": bikeVlog,
+      "title": "Bike Vlog Template",
+      "description": "A modern, responsive template website built using Next.js for bike vloggers to showcase their journeys and content in a professional way. The template is designed with a clean layout and intuitive navigation, featuring sections for blogs, video content, and an about page. With optimized file structuring and Next.js server-side rendering, the website ensures fast loading, SEO friendliness, and a smooth user experience. This project demonstrates skills in front-end development, reusable component design, and building scalable templates that can be easily customized for creators.",
+      "ghLink": "https://github.com/Infinity2209/bike-vlog"
     },
     {
       "imgPath": book,
