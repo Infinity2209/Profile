@@ -9,6 +9,7 @@ import {
 import Home from './pages/Home'
 import Skill from './pages/Skillset'
 import Project from './pages/Projects'
+import Certificate from './pages/Certificates'
 // import Resume from './pages/Resume'
 
 import Navbar from "./components/Navbar/Navbar";
@@ -41,6 +42,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/skillset" element={<Skill />} />
           <Route path="/project" element={<Project />} />
+          <Route path="/certificates" element={<Certificate />} />
           {/* <Route path="/resume" element={<Resume />} /> */}
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>

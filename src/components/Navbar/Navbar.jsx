@@ -12,7 +12,7 @@ import {
   AiOutlineFundProjectionScreen,
 } from "react-icons/ai";
 import { GiSkills } from "react-icons/gi"
-// import { CgFileDocument } from "react-icons/cg";
+import { CgFileDocument } from "react-icons/cg";
 
 
 function NavBar() {
@@ -75,6 +75,16 @@ function NavBar() {
                   style={{ marginBottom: "1px" }}
                 />{" "}
                 Projects
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/certificates"
+                onClick={() => updateExpanded(false)}
+              >
+                <CgFileDocument style={{ marginBottom: "1px" }} /> Certificates
               </Nav.Link>
             </Nav.Item>
 

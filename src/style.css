@@ -627,6 +627,198 @@ button:focus {
   background-image: var(--section-background-color);
 }
 
+.certificate-section {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 30px;
+  background-image: var(--section-background-color);
+}
+
+/* Certificate Card Styles */
+.certificate-card-view {
+  border: 1.7px solid rgba(0, 250, 250, 0.8);
+  border-radius: 15px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: transparent;
+  box-shadow: 4px 5px 4px 3px rgba(0, 250, 250, 0.64);
+  max-width: 500px;
+  height: 300px;
+  transition: all 0.3s ease 0s;
+}
+
+.certificate-card-view:hover {
+  transform: scale(1.10);
+  overflow: hidden;
+  box-shadow: 4px 5px 6px 4px rgba(0, 250, 250, 0.8);
+}
+
+.certificate-card-img {
+  height: 400px;
+  width: 95%;
+  align-self: center;
+  object-fit: cover;
+  padding: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.certificate-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.certificate-card-title {
+  color: #f3f5f7ff;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Certificate Modal Styles */
+.certificate-modal .modal-content {
+  background-color: transparent;
+  /* border: 2px solid #00fafa; */
+  /* border-radius: 15px; */
+  /* box-shadow: 0 0 30px rgba(0, 250, 250, 0.6); */
+  backdrop-filter: blur(10px);
+}
+
+.certificate-modal .modal-header {
+  border-bottom: 1px solid rgba(0, 250, 250, 0.3);
+  padding: 1rem 1.5rem;
+}
+
+.certificate-modal-title {
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.certificate-modal-close {
+  background: none;
+  border: none;
+  color: #00fafa;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* .certificate-modal-close:hover {
+  background-color: rgba(0, 250, 250, 0.2);
+  transform: scale(1.1);
+  color: #fff;
+} */
+
+.certificate-modal-body {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificate-modal-image {
+  max-width: 100%;
+  max-height: 70vh;
+  /* border-radius: 10px; */
+  /* box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); */
+  transition: transform 0.3s ease;
+}
+
+.certificate-modal-image:hover {
+  transform: scale(1.02);
+}
+
+/* Modal Animation */
+.modal.fade .modal-dialog {
+  transform: scale(0.8);
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.modal.show .modal-dialog {
+  transform: scale(1);
+}
+
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-backdrop.fade {
+  opacity: 0;
+}
+
+.modal-backdrop.show {
+  opacity: 1;
+}
+
+/* Photo stack effect for modal */
+.certificate-modal .modal-content::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: rgba(0, 250, 250, 0.1);
+  border-radius: 12px;
+  z-index: -1;
+  transform: translateZ(-10px);
+}
+
+.certificate-modal .modal-content::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: rgba(0, 250, 250, 0.05);
+  border-radius: 10px;
+  z-index: -2;
+  transform: translateZ(-20px);
+}
+
+/* Responsive modal */
+@media (max-width: 768px) {
+  .certificate-modal .modal-dialog {
+    margin: 1rem;
+  }
+  
+  .certificate-modal-title {
+    font-size: 1.2rem;
+  }
+  
+  .certificate-modal-body {
+    padding: 1rem;
+  }
+  
+  .certificate-modal-image {
+    max-height: 60vh;
+  }
+}
+
+/* Hover effect for certificate cards */
+.certificate-card-view:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 4px 8px 6px 4px rgba(0, 250, 250, 0.8);
+  z-index: 10;
+}
+
 .project-card {
   padding-top: 20px;
   padding-bottom: 20px;
