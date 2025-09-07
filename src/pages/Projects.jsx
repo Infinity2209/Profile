@@ -21,6 +21,7 @@ import notesSummarizer from "../assets/projects/noteSummarizer.png";
 import aiEmailGenerator from "../assets/projects/aiEmailGenerator.png";
 import Abnormal from "../assets/projects/Abnormal.png";
 import bikeVlog from "../assets/projects/bikeVlog.png";
+import Ecommerce from "../assets/projects/e-commerce.png";
 
 const Projects = () => {
   const details = [
@@ -41,6 +42,12 @@ const Projects = () => {
       "title": "Keeper App",
       "description": "Our Image Conversion & Manipulation Tool simplifies real-time image format conversion, resizing, cropping, and optimization within React applications. Built with a component-based architecture, it leverages react-image-file-resizer, Jimp, and react-to-pdf for seamless processing. Secure AWS S3 storage and Lambda functions ensure scalability, while Base64 encoding enables real-time rendering. Designed for developers, this tool reduces server load and supports future enhancements like batch processing and AI-powered image recognition.",
       "ghLink": "https://github.com/Infinity2209/Keeper-App-Frontend-"
+    },
+    {
+      "imgPath": Ecommerce,
+      "title": "E-Commerce Web App",
+      "description": "ShopEase is a full-stack single-page e-commerce web application that provides a smooth shopping experience with essential features. The project includes secure JWT-based authentication, CRUD APIs for product management with filters (price, categories), and a fully functional cart system where items persist even after logout. The frontend features a modern, professional design with pages for signup/login, product listing with filters, and a dynamic cart for adding and removing items, Frontend: React.js, Tailwind CSS, Backend: Node.js, Express.js, MongoDB, JWT Authentication, Features: User authentication, product listing with filters, cart management with persistence, responsive UI",
+      "ghLink": "https://github.com/Infinity2209/E-commerce-website"
     },
     {
       "imgPath": notesSummarizer,

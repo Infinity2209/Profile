@@ -15,6 +15,7 @@ import JS from "../assets/Certificate/JS.png";
 import software from "../assets/Certificate/software.png";
 import tata from "../assets/Certificate/TATA.png";
 import UI from "../assets/Certificate/UX.png";
+import ibm from "../assets/Certificate/IBM.png";
 
 const Certificates = () => {
     const [selectedCertificate, setSelectedCertificate] = useState(null);
@@ -38,6 +39,10 @@ const Certificates = () => {
         {
             imgPath: internship2,
             title: "Internship at Intelligent AWS Application Company",
+        },
+        {
+            imgPath: ibm,
+            title: "Cybersecurity Fundamentals",
         },
         {
             imgPath: frontend,
