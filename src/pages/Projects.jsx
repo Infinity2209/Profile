@@ -22,6 +22,8 @@ import aiEmailGenerator from "../assets/projects/aiEmailGenerator.png";
 import Abnormal from "../assets/projects/Abnormal.png";
 import bikeVlog from "../assets/projects/bikeVlog.png";
 import Ecommerce from "../assets/projects/e-commerce.png";
+import weatherNow from "../assets/projects/weatherNow.png";
+import contractDashboard from "../assets/projects/contractDashboard.png"
 
 const Projects = () => {
   const details = [
@@ -42,6 +44,18 @@ const Projects = () => {
       "title": "Keeper App",
       "description": "Our Image Conversion & Manipulation Tool simplifies real-time image format conversion, resizing, cropping, and optimization within React applications. Built with a component-based architecture, it leverages react-image-file-resizer, Jimp, and react-to-pdf for seamless processing. Secure AWS S3 storage and Lambda functions ensure scalability, while Base64 encoding enables real-time rendering. Designed for developers, this tool reduces server load and supports future enhancements like batch processing and AI-powered image recognition.",
       "ghLink": "https://github.com/Infinity2209/Keeper-App-Frontend-"
+    },
+    {
+      "imgPath": weatherNow,
+      "title": "Weather Now",
+      "description": "Weather Now is a full-stack web application that provides real-time weather updates for any city worldwide. Users can simply enter a city name to view temperature, humidity, and wind details in an instant.Built with React / Next.js, Tailwind CSS, and Node.js, the app integrates the Open-Meteo API to deliver accurate data with a smooth, responsive interface. This project highlights efficient API handling, clean UI design, and seamless frontend-backend communication.",
+      "ghLink": "https://github.com/Infinity2209/weather-now"
+    },
+    {
+      "imgPath": contractDashboard,
+      "title": "Contract Management Dashboard",
+      "description": "The SaaS Contracts Dashboard is a modern single-page web app built to simplify contract management. It enables users to log in, upload files, browse through contracts with advanced search and filters, and explore AI-generated insights from contract clauses.Developed using React, Tailwind CSS, and Context API, the dashboard offers smooth navigation, efficient state management, and a fully responsive interface that works seamlessly across devices.",
+      "ghLink": "https://github.com/Infinity2209/Contract-management-dashboard"
     },
     {
       "imgPath": Ecommerce,
