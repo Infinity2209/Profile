@@ -3,85 +3,71 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import "./ProjectCard.css"; // Import the CSS file
 
 const ProjectCard = (props) => {
   return (
-    <Card
-      className="project-card-view"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-between",
-        alignContent: "space-between",
-      }}
-    >
-      <Card.Img
-        variant="top"
-        src={props.imgPath}
-        alt="card-img"
-        style={{
-          height: "200px",
-          objectFit: "contain",
-          alignSelf: "flex-start",
-          borderRadius: "10%",
-        }}
-      />
-      <Card.Body
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-          alignContent: "space-between",
-        }}
-      >
-        <Card.Title style={{color:"black", fontWeight:"bold"}}>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify",fontSize:"15px" , color:"black" }}>
+    <Card className="project-card-view modern-card">
+
+      {/* Image Container */}
+      <div className="card-img-container">
+        <Card.Img
+          variant="top"
+          src={props.imgPath}
+          alt={props.title}
+          className="card-img-top"
+        />
+        <div className="img-overlay"></div>
+      </div>
+
+      {/* Card Body */}
+      <Card.Body className="card-body-modern">
+        {/* Title with Gradient */}
+        <Card.Title className="gradient-title">{props.title}</Card.Title>
+
+        {/* Description */}
+        <Card.Text className="card-description">
           {props.description}
         </Card.Text>
-        <Button
-          variant="primary"
-          href={props.ghLink}
-          target="_blank"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            alignContent: "flex-end",
-            textAlign: "center",
-            position: "relative",
-            bottom: "0px",
-          }}
-        >
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-        {"\n"}
-        {"\n"}
 
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{
-              marginTop: "10px",
-              display: "flex",
-              justifyContent: "center",
-              alignContent: "flex-end",
-              alignItems: "center",
-              textAlign: "center",
-              position: "static",
-              bottom: "0px",
-            }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
+        {/* Tech Stack Tags */}
+        {props.techStack && props.techStack.length > 0 && (
+          <div className="tech-stack-container">
+            {props.techStack.map((tech, index) => (
+              <span key={index} className="tech-tag">
+                {tech}
+              </span>
+            ))}
+          </div>
         )}
+
+        {/* Buttons Container */}
+        <div className="buttons-container">
+          <Button
+            variant="outline-light"
+            href={props.ghLink}
+            target="_blank"
+            className="github-btn"
+          >
+            <BsGithub /> &nbsp;
+            {props.isBlog ? "Blog" : "GitHub"}
+          </Button>
+
+          {!props.isBlog && props.demoLink && (
+            <Button
+              variant="primary"
+              href={props.demoLink}
+              target="_blank"
+              className="demo-btn"
+            >
+              <CgWebsite /> &nbsp;
+              {"Demo"}
+            </Button>
+          )}
+        </div>
       </Card.Body>
     </Card>
   );
 };
+
 export default ProjectCard;
