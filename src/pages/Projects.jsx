@@ -151,7 +151,8 @@ const Projects = () => {
       title: "Hotel Landing Page",
       description: "Sleek, responsive hotel landing page with engaging hero section, dynamic content rendering, and optimized performance for fast loading speeds.",
       ghLink: "https://github.com/Infinity2209/Hotel-Landing-site",
-      techStack: ["Next.js", "React", "Tailwind CSS", "SEO Optimization"]
+      techStack: ["Next.js", "React", "Tailwind CSS", "SEO Optimization"],
+      demoLink: "https://hotel-template-web.netlify.app/"
     },
     {
       imgPath: videoEditor,
