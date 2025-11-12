@@ -6,57 +6,68 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import logo from "../../assets/sLogo.png";
+import { HiOutlineMail } from "react-icons/hi";
 
 const Footer = () => {
-    return (
-      <Container fluid className="footer" style={{ marginLeft: 0, marginRight: 0 }}>
-        <Row>
-          <Col md="4" className="footer-copywright">
-            <span>Dedicated to creating impactful solutions!</span>
-          </Col>
-          <Col md="4" className="footer-copywright">
-            <img src={logo} className="img-fluid logo" alt="brand" />
-          </Col>
-          <Col md="4" className="footer-body">
-            <ul className="footer-icons">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/Infinity2209"
-                  style={{ color: "white" }}
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  aria-label="github"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://twitter.com/AnantaNag917487"
-                  style={{ color: "white" }}
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  aria-label="twitter"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/ananta-nag-126053263/"
-                  style={{ color: "white" }}
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  aria-label="linkedin"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-            </ul>
-          </Col>
-        </Row>
-      </Container>
-    );  
+  return (
+    <Container fluid className="footer" style={{ marginLeft: 0, marginRight: 0 }}>
+      <Row>
+        <Col md="4" className="footer-copywright">
+          <span>Dedicated to creating impactful solutions!</span>
+        </Col>
+        <Col md="4" className="footer-copywright">
+          <img src={logo} className="img-fluid logo" alt="brand" />
+        </Col>
+        <Col md="4" className="footer-body">
+          <ul className="footer-icons">
+            <li className="social-icons">
+              <a
+                href="https://github.com/Infinity2209"
+                style={{ color: "white" }}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="github"
+              >
+                <AiFillGithub />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://twitter.com/AnantaNag917487"
+                style={{ color: "white" }}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="twitter"
+              >
+                <AiOutlineTwitter />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://www.linkedin.com/in/ananta-nag-126053263/"
+                style={{ color: "white" }}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="linkedin"
+              >
+                <FaLinkedinIn />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a href="mailto:anantanag91@gmail.com"
+                style={{ color: "white" }}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="linkedin"
+              >
+                <HiOutlineMail />
+              </a>
+            </li>
+          </ul>
+        </Col>
+      </Row>
+    </Container>
+  );
 }
 
 export default Footer
