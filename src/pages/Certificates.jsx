@@ -16,6 +16,9 @@ import software from "../assets/Certificate/software.png";
 import tata from "../assets/Certificate/TATA.png";
 import UI from "../assets/Certificate/UX.png";
 import ibm from "../assets/Certificate/IBM.png";
+import jpMorgan from "../assets/Certificate/jpMorgan.png";
+import AiEthics from "../assets/Certificate/AiEthics.png";
+import AWS4 from "../assets/Certificate/AWS4.png";
 
 const Certificates = () => {
     const [selectedCertificate, setSelectedCertificate] = useState(null);
@@ -39,6 +42,18 @@ const Certificates = () => {
         {
             imgPath: internship2,
             title: "Internship at Intelligent AWS Application Company",
+        },
+        {
+            imgPath: jpMorgan,
+            title: "Software Engineering Job Simulation",
+        },
+        {
+            imgPath: AiEthics,
+            title: "AI Ethics",
+        },
+        {
+            imgPath: AWS4,
+            title: "AWS Inroduction to Containers",
         },
         {
             imgPath: ibm,
