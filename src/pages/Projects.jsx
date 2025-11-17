@@ -26,6 +26,7 @@ import weatherNow from "../assets/projects/weatherNow.png";
 import contractDashboard from "../assets/projects/contractDashboard.png";
 import chatPortal from "../assets/projects/chart-portal.png";
 import rtigers from "../assets/projects/rtigers.png";
+import user from "../assets/projects/user.png";
 
 const Projects = () => {
   const details = [
@@ -36,6 +37,14 @@ const Projects = () => {
       ghLink: "https://github.com/Intelligent-Cloud-Applications",
       techStack: ["React", "JavaScript", "HTML", "CSS", "Git", "UI Design"],
       demoLink: undefined,
+    },
+    {
+      imgPath: user,
+      title: "User and Product Management System",
+      description: "A responsive React admin panel with secure JWT authentication and role-based access control.Built using Redux Toolkit, RTK Query, and Tailwind CSS for fast, optimized performance.Features complete user and product management, multilingual support, and dark mode.Designed with a clean UI, real-time updates, and a seamless mobile-friendly experience.",
+      ghLink: "https://github.com/Infinity2209/user",
+      techStack: ["React","Redux Toolkit","RTK Query","i18Next","JSON Server"],
+      demoLink: "https://useandproduct-management.netlify.app",
     },
     {
       imgPath: note,
