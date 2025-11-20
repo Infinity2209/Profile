@@ -27,6 +27,7 @@ import contractDashboard from "../assets/projects/contractDashboard.png";
 import chatPortal from "../assets/projects/chart-portal.png";
 import rtigers from "../assets/projects/rtigers.png";
 import user from "../assets/projects/user.png";
+import pdfchecker from "../assets/projects/pdfchecker.png";
 
 const Projects = () => {
   const details = [
@@ -43,8 +44,15 @@ const Projects = () => {
       title: "User and Product Management System",
       description: "A responsive React admin panel with secure JWT authentication and role-based access control.Built using Redux Toolkit, RTK Query, and Tailwind CSS for fast, optimized performance.Features complete user and product management, multilingual support, and dark mode.Designed with a clean UI, real-time updates, and a seamless mobile-friendly experience.",
       ghLink: "https://github.com/Infinity2209/user",
-      techStack: ["React","Redux Toolkit","RTK Query","i18Next","JSON Server"],
+      techStack: ["React", "Redux Toolkit", "RTK Query", "i18Next", "JSON Server"],
       demoLink: "https://useandproduct-management.netlify.app",
+    },
+    {
+      imgPath: pdfchecker,
+      title: "PDF Rule Checker App",
+      description: "A full-stack web app that analyzes PDF documents using LLM intelligence. Users upload a PDF, define simple rules, and receive automated PASS/FAIL validation with evidence, reasoning, and confidence scores. Built with a clean UI, fast PDF text extraction, and seamless LLM integration for accurate document analysis.",
+      ghLink: "https://github.com/Infinity2209/PDF-Rule-Checker",
+      techStack: ["React", "Node.js", "Express", "OpenAI API"],
     },
     {
       imgPath: note,
