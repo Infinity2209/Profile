@@ -33,14 +33,6 @@
     padding: 0.25rem 0.75rem;
 }
 
-.pulse-dot {
-    width: 0.5rem;
-    height: 0.5rem;
-    background: #34d399;
-    border-radius: 50%;
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
 @keyframes pulse {
 
     0%,
@@ -51,12 +43,6 @@
     50% {
         opacity: 0.5;
     }
-}
-
-.live-badge span {
-    color: #6ee7b7;
-    font-size: 0.75rem;
-    font-weight: 500;
 }
 
 /* Image Container */

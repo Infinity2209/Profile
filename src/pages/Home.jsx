@@ -203,7 +203,6 @@ const PremiumHeroImage = ({ imageSrc }) => {
 
 const Home = () => {
   const tags = ["Software Engineer", "Developer", " Website Designer", "Tech Enthusiast", "Full Stack Developer", "UI/UX Designer", "AI Enthusiast", "Web Developer", "Creative Thinker", "Writer", "Shayer"];
-
   return (
     <section>
       <Container fluid className="home-section" id="home">

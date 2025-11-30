@@ -27,7 +27,7 @@ import contractDashboard from "../assets/projects/contractDashboard.png";
 import chatPortal from "../assets/projects/chart-portal.png";
 import rtigers from "../assets/projects/rtigers.png";
 import user from "../assets/projects/user.png";
-import pdfchecker from "../assets/projects/pdfchecker.png";
+// import pdfchecker from "../assets/projects/pdfchecker.png";
 
 const Projects = () => {
   const details = [
@@ -47,13 +47,13 @@ const Projects = () => {
       techStack: ["React", "Redux Toolkit", "RTK Query", "i18Next", "JSON Server"],
       demoLink: "https://useandproduct-management.netlify.app",
     },
-    {
-      imgPath: pdfchecker,
-      title: "PDF Rule Checker App",
-      description: "A full-stack web app that analyzes PDF documents using LLM intelligence. Users upload a PDF, define simple rules, and receive automated PASS/FAIL validation with evidence, reasoning, and confidence scores. Built with a clean UI, fast PDF text extraction, and seamless LLM integration for accurate document analysis.",
-      ghLink: "https://github.com/Infinity2209/PDF-Rule-Checker",
-      techStack: ["React", "Node.js", "Express", "OpenAI API"],
-    },
+    // {
+    //   imgPath: pdfchecker,
+    //   title: "PDF Rule Checker App",
+    //   description: "A full-stack web app that analyzes PDF documents using LLM intelligence. Users upload a PDF, define simple rules, and receive automated PASS/FAIL validation with evidence, reasoning, and confidence scores. Built with a clean UI, fast PDF text extraction, and seamless LLM integration for accurate document analysis.",
+    //   ghLink: "https://github.com/Infinity2209/PDF-Rule-Checker",
+    //   techStack: ["React", "Node.js", "Express", "OpenAI API"],
+    // },
     {
       imgPath: note,
       title: "Note Taking App",

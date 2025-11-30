@@ -98,7 +98,7 @@ const Certificates = () => {
             <Particle />
             <Container fluid style={{ marginLeft: 0, marginRight: 0 }}>
                 <h1 className="project-heading">
-                    My <strong className="yellow">Certificates</strong>
+                    Hall of<strong className="yellow"> Excellency</strong>
                 </h1>
                 <p style={{ color: "white" }}>
                     Here are some of the certifications I've earned throughout my learning journey.
@@ -115,7 +115,7 @@ const Certificates = () => {
                     ))}
                 </Row>
             </Container>
-            
+
             {/* Certificate Modal */}
             <CertificateModal
                 show={showModal}

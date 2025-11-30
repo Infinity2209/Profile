@@ -1,7 +1,5 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import LaptopImg from "../../assets/home-main.svg";
-import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
   AiOutlineTwitter
@@ -9,6 +7,7 @@ import {
 import { FaLinkedinIn, FaAward, FaBriefcase, FaGraduationCap } from "react-icons/fa";
 import "./About.css";
 import { HiOutlineMail } from "react-icons/hi";
+import JourneyPath from "./JourneyPath";
 
 const About = () => {
   const highlights = [
@@ -22,7 +21,7 @@ const About = () => {
       icon: <FaBriefcase className="highlight-icon" />,
       title: "Experience",
       value: "2+ Years",
-      subtitle: "Full-Stack & DevOps"
+      subtitle: "Full-Stack Software Developer & DevOps Engineer"
     },
     {
       icon: <FaAward className="highlight-icon" />,
@@ -34,6 +33,22 @@ const About = () => {
 
   return (
     <Container fluid className="home-about-section" id="about">
+      {/* Highlights Section */}
+      <Row className="home-about-row mb-5">
+        {highlights.map((item, index) => (
+          <Col lg={4} md={6} sm={12} key={index} className="mb-4">
+            <Card className="highlight-card m-4 p-3">
+              <Card.Body className="text-center">
+                {item.icon}
+                <h5 className="mt-3 mb-2">{item.title}</h5>
+                <h2 className="yellow mb-2">{item.value}</h2>
+                <p className="text-white mb-0">{item.subtitle}</p>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
+      </Row>
+
       {/* Main Introduction Section */}
       <Row className="home-about-row mb-5">
         <Col lg={7} md={12} className="home-about-description">
@@ -61,26 +76,13 @@ const About = () => {
         </Col>
 
         <Col lg={4} md={12} className="d-flex align-items-center justify-content-center mt-4 mt-lg-0">
-          <Tilt>
-            <img src={LaptopImg} className="img-fluid" alt="avatar" style={{ maxWidth: "400px" }} />
-          </Tilt>
+            {/* Journey Path Section */}
+            <Row>
+              <Col md={12}>
+                <JourneyPath />
+              </Col>
+            </Row>
         </Col>
-      </Row>
-
-      {/* Highlights Section */}
-      <Row className="home-about-row mb-5">
-        {highlights.map((item, index) => (
-          <Col lg={4} md={6} sm={12} key={index} className="mb-4">
-            <Card className="highlight-card m-3 p-3">
-              <Card.Body className="text-center">
-                {item.icon}
-                <h5 className="mt-3 mb-2">{item.title}</h5>
-                <h2 className="yellow mb-2">{item.value}</h2>
-                <p className="text-white mb-0">{item.subtitle}</p>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
       </Row>
 
       {/* College Location */}
