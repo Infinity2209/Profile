@@ -8,15 +8,15 @@ const CertificateModal = ({ show, onHide, certificate }) => {
         <Modal
             show={show}
             onHide={onHide}
-            size="lg"
+            size="xl"
             aria-labelledby="certificate-modal"
             centered
             className="certificate-modal"
         >
-            <Modal.Header className="certificate-modal-header">
+            <Modal.Header className="certificate-modal-header justify-content-between">
                 <Modal.Title
                     id="certificate-modal"
-                    className="certificate-modal-title"
+                    className="certificate-modal-title text-white"
                 >
                     {certificate.title}
                 </Modal.Title>
