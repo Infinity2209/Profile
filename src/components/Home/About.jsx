@@ -51,38 +51,7 @@ const About = () => {
 
       {/* Main Introduction Section */}
       <Row className="home-about-row mb-5">
-        <Col lg={7} md={12} className="home-about-description">
-          <h1 style={{ fontSize: "2.6em", marginBottom: "30px" }}>
-            LET ME <span className="yellow"> INTRODUCE </span> MYSELF
-          </h1>
-          <p className="home-about-body">
-            Hi, I'm <span className="yellow">Ananta Nag</span>, a <b className="yellow">Full-Stack Developer & DevOps Engineer</b> from <span className="yellow">Bargarh, Odisha, India</span>.
-            <br />
-            <br />
-            I recently completed my Bachelor's degree in <b className="yellow">Computer Science and Engineering</b> at the Government College of Engineering, Kalahandi, with a <b className="yellow">CGPA of 8.6</b>.
-            <br />
-            <br />
-            I have hands-on experience building scalable web applications and serverless architectures. I've worked with <b className="yellow">INTELLIGENT AWS APPLICATION</b> (July 2023 – Dec 2024) and currently interning at <b className="yellow">BWORKZLLC</b> (Jan 2025 – May 2025).
-            <br />
-            <br />
-            My core stack includes <b className="yellow">JavaScript (ES6+), React, Next.js, and Node.js</b>. I specialize in <b className="yellow">AWS cloud services</b> including Lambda, DynamoDB, S3, and API Gateway.
-            <br />
-            <br />
-            I'm proficient in <b className="yellow">Python, Java, and SQL</b>, and have extensive experience with <b className="yellow">Serverless Framework, AWS Amplify, Express.js, MongoDB, Tailwind CSS, and Bootstrap</b>.
-            <br />
-            <br />
-            Beyond coding, I served as <b className="yellow">Vice President</b> of GCEK Literary & Nukkad Clubs, leading magazine publications and organizing 10+ street plays promoting social causes.
-          </p>
-        </Col>
-
-        <Col lg={4} md={12} className="d-flex align-items-center justify-content-center mt-4 mt-lg-0">
-            {/* Journey Path Section */}
-            <Row>
-              <Col md={12}>
-                <JourneyPath />
-              </Col>
-            </Row>
-        </Col>
+        <JourneyPath />
       </Row>
 
       {/* College Location */}
