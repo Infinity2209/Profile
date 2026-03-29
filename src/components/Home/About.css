@@ -225,6 +225,29 @@ b.yellow {
     }
 }
 
+/* Tablet About */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .highlight-icon {
+        font-size: 3rem;
+    }
+
+    .highlight-card h2 {
+        font-size: 2.2rem;
+    }
+
+    .contact-info-inline {
+        gap: 20px;
+    }
+
+    .home-about-social-links {
+        gap: 15px;
+    }
+
+    .map-container iframe {
+        height: 350px !important;
+    }
+}
+
 @media (max-width: 576px) {
     .home-about-description h1 {
         font-size: 2em !important;

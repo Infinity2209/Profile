@@ -76,140 +76,154 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #00fafa14;
-  transition: all 0.3s ease-out 0s;
-  box-shadow: 0px 10px 10px 0px #00fafa20;
-  backdrop-filter: blur(15px);
+  background-color: rgba(0, 250, 250, 0.09);
+  box-shadow: 0 8px 20px rgba(0, 250, 250, 0.12);
+  backdrop-filter: blur(16px);
+  transition: all 0.3s ease-out;
 }
 
 .navbar {
   position: fixed;
-  transition: all 0.3s ease-out 0s;
-  padding: 0.3rem 1rem;
-  font-size: 1.3rem;
-  height: 7rem;
-}
-
-.navbar-toggler {
-  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.15rem;
+  z-index: 1000;
+  transition: all 0.3s ease-out;
   background-color: transparent;
-  border-color: transparent;
-}
-
-.navbar-toggler span {
-  display: block;
-  background-color: #00fafa;
-  height: 4px;
-  width: 30px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  transform: rotate(0deg);
-  left: 0;
-  opacity: 1;
-}
-
-.navbar-toggler:focus,
-.navbar-toggler:active {
-  outline: 0;
-}
-
-.navbar-toggler span:nth-child(1),
-.navbar-toggler span:nth-child(3) {
-  transition: transform 0.35s ease-in-out;
-  transition: transform 0.35s ease-in-out;
-}
-
-.navbar-toggler:not(.collapsed) span:nth-child(1) {
-  position: absolute;
-  left: 12px;
-  top: 10px;
-  transform: rotate(135deg);
-  opacity: 0.9;
-}
-
-.navbar-toggler:not(.collapsed) span:nth-child(2) {
-  height: 10px;
-  visibility: hidden;
-  background-color: transparent;
-}
-
-.navbar-toggler:not(.collapsed) span:nth-child(3) {
-  position: absolute;
-  left: 12px;
-  top: 10px;
-  transform: rotate(-135deg);
-  opacity: 0.9;
-}
-
-@media (max-width: 767px) {
-  .navbar {
-    padding: 1rem 2rem;
-    font-size: 1.4rem;
-    background-color: #00fafa3a;
-  }
-
-  .navbar-nav .nav-item a::after {
-    display: none;
-  }
-}
-
-.navbar-brand {
-  color: rgb(250, 250, 250);
 }
 
 .logo {
-  height: 8em;
-  width: 10em;
+  height: 52px;
+  width: auto;
 }
 
+/* All links white */
 .navbar-nav .nav-link {
-  color: white;
-  /* padding-right: 1rem;
-  padding-left: 1rem; */
+  color: white !important;
 }
 
-/* 
-.nav-link {
-  padding: 0.8rem 1rem;
-} */
+.navbar-nav .nav-link:hover {
+  color: #00fafa !important;
+}
 
-@media (max-width: 769px) {
-  .nav-link {
-    padding: 0.7rem 1rem;
-    background-color: #00738a;
-    width: 14rem;
+/* ====================== DESKTOP / LAPTOP (≥1025px) ====================== */
+@media (min-width: 1025px) {
+  .navbar {
+    padding: 1rem 3rem;
+  }
+  .logo {
+    height: 108px;
+  }
+  .navbar-nav .nav-item {
+    margin-left: 2.5rem;
+  }
+  .navbar-nav .nav-link {
+    padding: 0.4rem 0;
+    font-weight: 300;
+  }
+  .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #00fafa;
+    transition: width 0.3s ease;
+  }
+  .navbar-nav .nav-link:hover::after {
+    width: 100%;
   }
 }
 
-.navbar-nav .nav-item {
-  position: relative;
-  margin-left: 20px;
+/* ====================== TABLET (769px - 1024px) ====================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    padding: 0.8rem 2rem;
+  }
+  .logo {
+    height: 88px;
+  }
+  .navbar-nav .nav-item {
+    margin-left: 1.5rem;
+  }
 }
 
-.navbar-nav .nav-item a {
-  font-weight: 200;
-  transition: all 0.3s ease-out 0s;
-  position: relative;
-  z-index: 1;
-  color: white;
+/* ====================== MOBILE (≤768px) ====================== */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1.2rem;
+    background-color: rgba(0, 250, 250, 0.07);
+    backdrop-filter: blur(12px);
+  }
+
+  .logo {
+    height: 62px;
+  }
+
+  /* Clean mobile menu - NO box around items */
+  .navbar-collapse {
+    background-color: transparent;
+    padding: 0;
+    margin-top: 0.8rem;
+  }
+
+  .navbar-nav {
+    text-align: left;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0.4rem 0;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.9rem 1.2rem !important;
+    font-size: 1.1rem;
+    border-radius: 0;
+    background: transparent;
+    border: none;
+    margin: 0;
+  }
+
+  .navbar-nav .nav-link:hover {
+    background: rgba(0, 250, 250, 0.15);
+    padding-left: 1.6rem;
+  }
+
+  /* Hamburger */
+  .navbar-toggler {
+    border: none;
+    padding: 0.4rem;
+  }
+
+  .navbar-toggler span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #00fafa;
+    margin: 0;
+    transition: all 0.35s ease;
+  }
+
+  .navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  .navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
 }
 
-.navbar-nav .nav-item a::after {
-  content: "";
-  position: relative;
-  display: block;
-  height: 5px;
-  width: 0;
-  border-radius: 16px;
-  background: #00fafa;
-  bottom: 1px;
-  left: 0;
-  z-index: -1;
-  transition: all 0.3s ease-out 0s;
-}
-
-.navbar-nav .nav-item a:hover::after {
-  width: 100%;
+/* Extra small phones */
+@media (max-width: 480px) {
+  .logo {
+    height: 48px;
+  }
 }
 
 /* --------- */
@@ -310,6 +324,30 @@ button:focus {
   color: #00fafa;
   /* color: #be6adf ; */
   font-weight: 600;
+}
+
+/* Tablet Home */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .heading {
+    font-size: 2em;
+  }
+
+  .heading-name {
+    font-size: 2.1em;
+  }
+
+  .Typewriter__wrapper {
+    font-size: 1.8em;
+  }
+
+  .Typewriter__cursor {
+    font-size: 2em;
+  }
+
+  .myAvtar img {
+    max-width: 80%;
+    height: auto;
+  }
 }
 
 .Typewriter__cursor {
@@ -427,6 +465,19 @@ button:focus {
   width: 170px !important;
 }
 
+/* Tablet Tech Icons */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .tech-icons {
+    font-size: 3.5em;
+    width: 140px !important;
+    margin: 20px;
+  }
+
+  .flip-card {
+    height: 100px;
+  }
+}
+
 @media (max-width: 767px) {
   .tech-icons {
     margin: 10px;
@@ -540,9 +591,19 @@ button:focus {
 /* --------- */
 .project-section {
   position: relative;
-  padding-top: 150px;
+  padding-top: 120px;
   padding-bottom: 30px;
   background-image: var(--section-background-color);
+}
+
+/* Tablet sections */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .project-section,
+  .certificate-section,
+  .resume-section {
+    padding-top: 100px;
+  }
 }
 
 .certificate-section {

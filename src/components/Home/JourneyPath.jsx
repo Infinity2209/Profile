@@ -154,7 +154,7 @@ const JourneyPath = () => {
         // Reset auto-rotate timer whenever we snap (via click or auto)
         resetAutoRotateTimer();
 
-    }, []);
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
     // Reset and start the 20-second auto-rotate timer
     const resetAutoRotateTimer = useCallback(() => {
@@ -165,12 +165,12 @@ const JourneyPath = () => {
         autoRotateTimerRef.current = setTimeout(() => {
             const nextIdx = (activeIdxRef.current + 1) % N;
             snapToIcon(nextIdx, orbitRef.current);
-        }, 15000); // 20 seconds
+        }, 15000); // 15 seconds
     }, [snapToIcon]);
 
-    // Initial setup
+    // Initial setup - mobile starts with active slice at bottom (270deg target)
     useEffect(() => {
-        snapToIcon(0, 0);
+        snapToIcon(0, window.innerWidth <= 768 ? 270 : 0);
     }, [snapToIcon]);
 
     // Keep activeIdxRef in sync

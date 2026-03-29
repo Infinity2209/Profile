@@ -180,3 +180,23 @@
         width: 100%;
     }
 }
+
+/* Tablet Projects */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .card-img-container {
+        height: 12rem;
+    }
+
+    .gradient-title {
+        font-size: 1.3rem !important;
+    }
+
+    .card-description {
+        font-size: 0.8rem !important;
+    }
+
+    .tech-tag {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.6rem;
+    }
+}

@@ -227,8 +227,8 @@ const Home = () => {
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <PremiumHeroImage imageSrc={require('../assets/Ananta.jpg')} />
+            <Col md={5} style={{ paddingBottom: 10 }}>
+              <PremiumHeroImage imageSrc={require('../assets/Ananta.jpeg')} />
             </Col>
           </Row>
         </Container>

@@ -90,21 +90,68 @@
     }
 
     /* ── Responsive ── */
-    @media (max-width: 640px) {
+@media (max-width: 768px) {
         .journey-path-wrapper {
             flex-direction: column;
-            align-items: center;
-            gap: 24px;
-            padding: 24px 16px;
+            align-items: stretch;
+            gap: 6rem;
+            padding: 10px 16px;
+            min-height: auto;
         }
 
-        /* .journey-detail-card::before,
-        .journey-detail-card::after {
-            display: none;
-        } */
+        .journey-regulator-side {
+            width: min(75vw, 380px);
+            height: min(75vw * 440/640, 380px);
+        }
+
+        .journey-dial-svg {
+            width: 100%;
+            height: 100%;
+        }
 
         .journey-detail-card {
             width: 100%;
-            max-width: 300px;
+            max-width: none;
+            margin: 0;
+            padding: 12px;
+            border-radius: 24px;
+        }
+
+        .journey-year-badge {
+            font-size: 16px;
+        }
+
+        .journey-detail-title {
+            font-size: 18px;
+        }
+
+        .journey-detail-desc {
+            font-size: 12px;
+        }
+
+        .journey-tag {
+            font-size: 20px;
+            padding: 6px 10px;
         }
     }
+
+/* Tablet JourneyPath */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .journey-regulator-side {
+        width: 500px;
+        height: 345px;
+    }
+
+    .journey-detail-card {
+        padding: 20px;
+        margin: 2rem;
+    }
+
+    .journey-detail-title {
+        font-size: 30px;
+    }
+
+    .journey-detail-desc {
+        font-size: 20px;
+    }
+}
