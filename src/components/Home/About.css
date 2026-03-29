@@ -96,13 +96,13 @@
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
-    border: 2px solid rgba(97, 218, 251, 0.2);
+    /* border: 2px solid rgba(97, 218, 251, 0.2); */
     transition: all 0.3s ease;
 }
 
 .map-container:hover {
     box-shadow: 0 20px 60px rgba(97, 218, 251, 0.15);
-    border-color: rgba(97, 218, 251, 0.4);
+    border-color: rgba(63, 190, 225, 0.759);
 }
 
 /* Cyan Text Styling */

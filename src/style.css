@@ -118,14 +118,15 @@ button:focus {
   .navbar-nav .nav-item {
     margin-left: 2.5rem;
   }
-  .navbar-nav .nav-link {
+.navbar-nav .nav-link {
     padding: 0.4rem 0;
     font-weight: 300;
+    position: relative;
   }
-  .navbar-nav .nav-link::after {
+.navbar-nav .nav-link::after {
     content: "";
     position: absolute;
-    bottom: -3px;
+    bottom: 0;
     left: 0;
     width: 0;
     height: 3px;

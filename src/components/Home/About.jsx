@@ -56,14 +56,6 @@ const About = () => {
 
       {/* College Location */}
       <Row className="mb-5 d-flex justify-content-center align-items-center">
-        <Col
-          md={5}
-          style={{ height: "100%" }}
-        >
-          <h2 className="text-center p-4 text-white" style={{ fontSize: "2.2em" }}>
-            MY <span className="yellow">COLLEGE</span> LOCATION
-          </h2>
-        </Col>
         <Col md={5}>
           <div className="map-container">
             <iframe
@@ -77,6 +69,14 @@ const About = () => {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
+        </Col>
+        <Col
+          md={5}
+          style={{ height: "100%" }}
+        >
+          <h2 className="text-center p-4 text-white" style={{ fontSize: "2.2em" }}>
+            MY <span className="yellow">COLLEGE</span> LOCATION
+          </h2>
         </Col>
       </Row>
 

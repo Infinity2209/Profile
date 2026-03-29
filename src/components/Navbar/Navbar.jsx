@@ -57,7 +57,7 @@ function NavBar() {
                 to="/skillset"
                 onClick={() => updateExpanded(false)}
               >
-                <GiSkills style={{ marginBottom: "2px" }} /> Skillset
+                <GiSkills style={{ marginBottom: "2px" }} /> Expertise
               </Nav.Link>
             </Nav.Item>
 
@@ -67,7 +67,7 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Projects
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Works
               </Nav.Link>
             </Nav.Item>
 
@@ -77,7 +77,7 @@ function NavBar() {
                 to="/certificates"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Certificates
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Records
               </Nav.Link>
             </Nav.Item>
           </Nav>
