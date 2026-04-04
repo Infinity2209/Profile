@@ -105,7 +105,7 @@ const Certificates = () => {
                 </p>
                 <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
                     {certificates.map((cert, index) => (
-                        <Col md={3} className="certificate-card-col" key={index} style={{ marginBottom: "20px" }}>
+                        <Col md={6} lg={4} xl={3} className="certificate-card-col" key={index} style={{ marginBottom: "20px" }}>
                             <CertificateCard
                                 imgPath={cert.imgPath}
                                 title={cert.title}

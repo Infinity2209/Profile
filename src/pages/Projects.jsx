@@ -27,6 +27,7 @@ import contractDashboard from "../assets/projects/contractDashboard.png";
 import chatPortal from "../assets/projects/chart-portal.png";
 import rtigers from "../assets/projects/rtigers.png";
 import user from "../assets/projects/user.png";
+import finance from "../assets/projects/Finance.png"
 // import pdfchecker from "../assets/projects/pdfchecker.png";
 
 const Projects = () => {
@@ -77,6 +78,14 @@ const Projects = () => {
       ghLink: "https://github.com/Infinity2209/rtigers-fitness-zone",
       techStack: ["React", "Tailwind CSS", "JavaScript"],
       demoLink: "https://rtiggersfitnessstudibpatna.netlify.app/",
+    },
+    {
+      imgPath: finance,
+      title: "Finance Dashboard",
+      description: "A production-ready personal finance dashboard built with React. It features real-time balance tracking, income & expense analytics, interactive charts, transaction management with filters and CSV export, and role-based access (Admin/Viewer). Includes insights like savings rate, top spending categories, and month-over-month trends with responsive dark-themed UI.",
+      ghLink: "https://github.com/Infinity2209/Finance-Dashboard-UI",
+      techStack: ["React 18", "React Router", "Chart.js", "Context API", "JavaScript", "CSS"],
+      demoLink: "https://lucent-marshmallow-5045fb.netlify.app/",
     },
     {
       imgPath: chatPortal,
@@ -242,7 +251,7 @@ const Projects = () => {
         </p>
         <Row style={{ justifyContent: "space-between", paddingBottom: "10px" }}>
           {details.map((data, index) => (
-            <Col md={4} className="project-card" key={index}>
+            <Col md={6} lg={4} xl={3} className="project-card" key={index}>
               <ProjectCard
                 imgPath={data.imgPath}
                 title={data.title}

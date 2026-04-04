@@ -90,7 +90,7 @@
     }
 
     /* ── Responsive ── */
-@media (max-width: 768px) {
+    @media (max-width: 768px) {
         .journey-path-wrapper {
             flex-direction: column;
             align-items: stretch;
@@ -135,23 +135,30 @@
         }
     }
 
-/* Tablet JourneyPath */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .journey-regulator-side {
-        width: 500px;
-        height: 345px;
+    @media (min-width: 465px) and (max-width: 768px){
+        .journey-regulator-side {
+            width: min(60vw, 380px);
+            height: min(60vw * 440/640, 380px);
+        }
     }
 
-    .journey-detail-card {
-        padding: 20px;
-        margin: 2rem;
-    }
+    /* Tablet JourneyPath */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .journey-regulator-side {
+            width: 500px;
+            height: 345px;
+        }
 
-    .journey-detail-title {
-        font-size: 30px;
-    }
+        .journey-detail-card {
+            padding: 20px;
+            margin: 2rem;
+        }
 
-    .journey-detail-desc {
-        font-size: 20px;
+        .journey-detail-title {
+            font-size: 30px;
+        }
+
+        .journey-detail-desc {
+            font-size: 20px;
+        }
     }
-}

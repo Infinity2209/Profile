@@ -139,15 +139,29 @@ button:focus {
 }
 
 /* ====================== TABLET (769px - 1024px) ====================== */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) {
   .navbar {
     padding: 0.8rem 2rem;
+    transition: all 0.2s ease !important;
   }
   .logo {
     height: 88px;
   }
   .navbar-nav .nav-item {
     margin-left: 1.5rem;
+  }
+  /* Smooth home animations on tablet */
+  .premium-image-container .float-animation {
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+  }
+  .premium-image-container .pulse-ring,
+  .premium-image-container .gradient-border,
+  .premium-image-container .particle-ping {
+    animation-play-state: paused;
+  }
+  .home-content {
+    padding: 6rem 0 2rem;
   }
 }
 
