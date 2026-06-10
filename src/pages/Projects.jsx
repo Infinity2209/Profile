@@ -43,7 +43,7 @@ const Projects = () => {
     {
       imgPath: user,
       title: "User and Product Management System",
-      description: "A responsive React admin panel with secure JWT authentication and role-based access control.Built using Redux Toolkit, RTK Query, and Tailwind CSS for fast, optimized performance.Features complete user and product management, multilingual support, and dark mode.Designed with a clean UI, real-time updates, and a seamless mobile-friendly experience.",
+      description: "This is a responsive, React admin panel optimized with Redux Toolkit. It features secure JWT authentication, role-based access control, real-time data updates.",
       ghLink: "https://github.com/Infinity2209/user",
       techStack: ["React", "Redux Toolkit", "RTK Query", "i18Next", "JSON Server"],
       demoLink: "https://useandproduct-management.netlify.app",
@@ -82,7 +82,7 @@ const Projects = () => {
     {
       imgPath: finance,
       title: "Finance Dashboard",
-      description: "A production-ready personal finance dashboard built with React. It features real-time balance tracking, income & expense analytics, interactive charts, transaction management with filters and CSV export, and role-based access (Admin/Viewer). Includes insights like savings rate, top spending categories, and month-over-month trends with responsive dark-themed UI.",
+      description: "The Finance Dashboard is a production-ready personal finance app built with React. It features a responsive, dark-themed UI with real-time balance tracking, interactive charts, analytics, transaction management with CSV export, and role-based access.",
       ghLink: "https://github.com/Infinity2209/Finance-Dashboard-UI",
       techStack: ["React 18", "React Router", "Chart.js", "Context API", "JavaScript", "CSS"],
       demoLink: "https://lucent-marshmallow-5045fb.netlify.app/",
