@@ -99,12 +99,21 @@ button:focus {
 }
 
 /* All links white */
+
 .navbar-nav .nav-link {
   color: white !important;
 }
 
+.navbar-nav .nav-link.active {
+    color: #00fafa !important;
+}
+
 .navbar-nav .nav-link:hover {
   color: #00fafa !important;
+}
+
+.navbar-nav .nav-link.active::after {
+  width: 100%;
 }
 
 /* ====================== DESKTOP / LAPTOP (≥1025px) ====================== */
@@ -112,18 +121,22 @@ button:focus {
   .navbar {
     padding: 1rem 3rem;
   }
+
   .logo {
     height: 108px;
   }
+
   .navbar-nav .nav-item {
     margin-left: 2.5rem;
   }
-.navbar-nav .nav-link {
+
+  .navbar-nav .nav-link {
     padding: 0.4rem 0;
     font-weight: 300;
     position: relative;
   }
-.navbar-nav .nav-link::after {
+
+  .navbar-nav .nav-link::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -133,8 +146,14 @@ button:focus {
     background: #00fafa;
     transition: width 0.3s ease;
   }
-  .navbar-nav .nav-link:hover::after {
+
+  .navbar-nav .nav-link:hover::after,
+  .navbar-nav .nav-link.active::after {
     width: 100%;
+  }
+
+  .navbar-nav .nav-link.active {
+    color: #00fafa !important;
   }
 }
 
@@ -144,22 +163,27 @@ button:focus {
     padding: 0.8rem 2rem;
     transition: all 0.2s ease !important;
   }
+
   .logo {
     height: 88px;
   }
+
   .navbar-nav .nav-item {
     margin-left: 1.5rem;
   }
+
   /* Smooth home animations on tablet */
   .premium-image-container .float-animation {
     animation-duration: 4s;
     animation-timing-function: ease-in-out;
   }
+
   .premium-image-container .pulse-ring,
   .premium-image-container .gradient-border,
   .premium-image-container .particle-ping {
     animation-play-state: paused;
   }
+
   .home-content {
     padding: 6rem 0 2rem;
   }
@@ -231,6 +255,12 @@ button:focus {
 
   .navbar-toggler:not(.collapsed) span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .navbar-nav .nav-link.active {
+    color: #00fafa !important;
+    background: rgba(0, 250, 250, 0.12);
+    border-left: 3px solid #00fafa;
   }
 }
 

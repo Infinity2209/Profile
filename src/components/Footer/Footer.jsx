@@ -15,7 +15,7 @@ const Footer = () => {
         <Col md="4" className="footer-copywright">
           <span>Dedicated to creating impactful solutions!</span>
         </Col>
-        <Col md="4" className="footer-copywright">
+        <Col md="2" className="footer-copywright">
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Col>
         <Col md="4" className="footer-body">
@@ -53,7 +53,7 @@ const Footer = () => {
                 <FaLinkedinIn />
               </a>
             </li>
-            <li className="social-icons">
+            {/* <li className="social-icons">
               <a href="mailto:anantanag91@gmail.com"
                 style={{ color: "white" }}
                 target="_blank"
@@ -62,7 +62,7 @@ const Footer = () => {
               >
                 <HiOutlineMail />
               </a>
-            </li>
+            </li> */}
           </ul>
         </Col>
       </Row>
