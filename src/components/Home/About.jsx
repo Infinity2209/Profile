@@ -6,7 +6,7 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn, FaAward, FaBriefcase, FaGraduationCap } from "react-icons/fa";
 import "./About.css";
-import { HiOutlineMail } from "react-icons/hi";
+// import { HiOutlineMail } from "react-icons/hi";
 import JourneyPath from "./JourneyPath";
 
 const About = () => {
