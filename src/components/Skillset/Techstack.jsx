@@ -13,12 +13,14 @@ import {
   SiTailwindcss,
   SiNextdotjs,
   SiBootstrap,
-  SiMongodb
+  SiMongodb,
+  SiSpringboot,
 } from "react-icons/si";
 import { 
   FaCss3Alt,
   FaJava
 } from "react-icons/fa";
+import { TbRobot } from "react-icons/tb";
 
 const Techstack = () => {
   const techs = [
@@ -29,7 +31,9 @@ const Techstack = () => {
     { icon: <DiReact />, name: "React" },
     { icon: <span>C</span>, name: "C" },
     { icon: <FaJava />, name: "Java" },
+    { icon: <SiSpringboot />, name: "Spring Boot" },
     { icon: <SiPython />, name: "Python" },
+    { icon: <TbRobot />, name: "Gen AI" },
     { icon: <DiGit />, name: "Git" },
     { icon: <SiAmazonwebservices />, name: "AWS" },
     { icon: <SiTailwindcss />, name: "Tailwind CSS" },
