@@ -3,12 +3,14 @@ import { Container, Row, Col } from "react-bootstrap";
 import CertificateCard from "../components/Certificates/CertificateCard";
 import CertificateModal from "../components/Certificates/CertificateModal";
 import Particle from "../components/Particle";
-
 import internship from "../assets/Certificate/internship.png";
 import internship2 from "../assets/Certificate/internship2.png";
 import AWS1 from "../assets/Certificate/AWS1.png";
 import AWS2 from "../assets/Certificate/AWS2.png";
 import AWS3 from "../assets/Certificate/AWS3.png";
+import AWS4 from "../assets/Certificate/AWS4.png";
+import AWS5 from "../assets/Certificate/AWS5.png";
+import AWS6 from "../assets/Certificate/AWS6.png";
 import frontend from "../assets/Certificate/frontend.png";
 import JS from "../assets/Certificate/JS.png";
 import software from "../assets/Certificate/software.png";
@@ -17,7 +19,6 @@ import UI from "../assets/Certificate/UX.png";
 import ibm from "../assets/Certificate/IBM.png";
 import jpMorgan from "../assets/Certificate/jpMorgan.png";
 import AiEthics from "../assets/Certificate/AiEthics.png";
-import AWS4 from "../assets/Certificate/AWS4.png";
 import react1 from "../assets/Certificate/react1.png";
 import react2 from "../assets/Certificate/react2.png";
 import masterRAG from "../assets/Certificate/masterRAG.png";
@@ -35,6 +36,8 @@ const ALL_CERTIFICATES = [
     { imgPath: AWS2, title: "Amazon Cloud Practitioner", category: "Cloud & AWS" },
     { imgPath: AWS3, title: "Amazon DevOps", category: "Cloud & AWS" },
     { imgPath: AWS4, title: "AWS Introduction to Containers", category: "Cloud & AWS" },
+    { imgPath: AWS5, title: "AWS Command Line Interface", category: "Cloud & AWS" },
+    { imgPath: AWS6, title: "Fundamentals of Generative AI", category: "Cloud & AWS" },
 
     { imgPath: genAI, title: "GenAI : Generative AI for Developers", category: "AI & Gen AI" },
     { imgPath: masterRAG, title: "Master RAG", category: "AI & Gen AI" },
