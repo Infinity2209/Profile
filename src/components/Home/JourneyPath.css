@@ -1,164 +1,164 @@
-    /* ── Journey Path — Fan Regulator Layout ── */
+.journey-path-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 32px 24px;
+    min-height: 750px;
+    color: white;
+    font-family: inherit;
+}
 
+.journey-regulator-side {
+    position: relative;
+    width: 640px;
+    height: 440px;
+    flex-shrink: 0;
+}
+
+.journey-dial-svg {
+    position: absolute;
+    inset: 0;
+    overflow: visible;
+}
+
+.journey-dial-svg g[role="tab"]:focus-visible path {
+    stroke-width: 3;
+    stroke-opacity: 1;
+}
+
+/* ── Detail card ── */
+.journey-detail-card {
+    flex: 1;
+    background: rgba(30, 30, 30, 0.95);
+    border: 1.5px solid color-mix(in srgb, var(--accent) 45%, transparent);
+    border-radius: 16px;
+    padding: 24px;
+    position: relative;
+    backdrop-filter: blur(16px);
+    margin: 5rem;
+    box-shadow: 0 15px 50px color-mix(in srgb, var(--accent) 15%, transparent);
+    animation: journeyFade 0.45s ease-out;
+}
+
+@keyframes journeyFade {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.journey-step {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.journey-year-badge {
+    display: inline-block;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    background: color-mix(in srgb, var(--accent) 15%, transparent);
+    color: var(--accent);
+    border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+    letter-spacing: 0.04em;
+}
+
+.journey-detail-title {
+    font-size: 26px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 10px;
+    line-height: 1.4;
+}
+
+.journey-detail-desc {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.7;
+    margin: 0 0 16px 0;
+}
+
+.journey-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.journey-tag {
+    background: var(--tagBg);
+    color: var(--tagColor);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .journey-detail-card { animation: none; }
+    .journey-orbit-group { transition: none !important; }
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
     .journey-path-wrapper {
-        display: flex;
-        align-items: center;
-        gap: 30px;
-        padding: 32px 24px;
-        min-height: 750px;
-        color: white;
-        font-family: inherit;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6rem;
+        padding: 10px 16px;
+        min-height: auto;
     }
 
-    /* ── Regulator container ── */
     .journey-regulator-side {
-        position: relative;
-        width: 640px;
-        height: 440px;
-        flex-shrink: 0;
+        width: min(75vw, 380px);
+        height: calc(min(75vw, 380px) * 0.6875); /* fixed: min() can't contain "*" directly */
     }
 
     .journey-dial-svg {
-        position: absolute;
-        inset: 0;
-        overflow: visible;
+        width: 100%;
+        height: 100%;
     }
 
-    /* ── Detail card ── */
     .journey-detail-card {
-        flex: 1;
-        background: rgba(30, 30, 30, 0.95);
-        border: 1.5px solid rgba(255, 255, 255, 0.12);
-        border-radius: 16px;
-        padding: 24px;
-        position: relative;
-        transition: border-color 0.3s;
-        backdrop-filter: blur(16px);
-        margin: 5rem;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 18px;
+        border-radius: 24px;
     }
 
-    /* ── Card content ── */
-    .journey-year-badge {
-        display: inline-block;
-        font-size: 31px;
-        font-weight: 500;
-        padding: 3px 10px;
-        border-radius: 20px;
-        margin-bottom: 12px;
-        background: color-mix(in srgb, var(--accent) 15%, transparent);
-        color: var(--accent);
-        border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
-        letter-spacing: 0.04em;
+    .journey-step { font-size: 12px; top: 12px; right: 16px; }
+    .journey-year-badge { font-size: 16px; }
+    .journey-detail-title { font-size: 20px; }
+    .journey-detail-desc { font-size: 14px; }
+    .journey-tag { font-size: 13px; padding: 4px 10px; }
+}
+
+@media (min-width: 465px) and (max-width: 768px) {
+    .journey-regulator-side {
+        width: min(60vw, 380px);
+        height: calc(min(60vw, 380px) * 0.6875);
+    }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .journey-regulator-side {
+        width: 500px;
+        height: 345px;
     }
 
-    .journey-detail-title {
-        font-size: 36px;
-        font-weight: 500;
-        color: #ffffff;
-        margin: 0 0 10px;
-        line-height: 1.4;
+    .journey-detail-card {
+        padding: 20px;
+        margin: 2rem;
     }
 
-    .journey-detail-desc {
-        font-size: 23px;
-        color: rgba(255, 255, 255, 0.6);
-        line-height: 1.7;
-        margin: 0 0 16px 0;
-    }
-
-    /* ── Icon and Tags ── */
-    .journey-detail-icon {
-        display: block;
-        margin: 0 0 16px 0;
-    }
-
-    .journey-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-top: 16px;
-    }
-
-    .journey-tag {
-        background: var(--tagBg);
-        color: var(--tagColor);
-        padding: 4px 12px;
-        border-radius: 20px;
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 1.4;
-    }
-
-    /* ── Responsive ── */
-    @media (max-width: 768px) {
-        .journey-path-wrapper {
-            flex-direction: column;
-            align-items: stretch;
-            gap: 6rem;
-            padding: 10px 16px;
-            min-height: auto;
-        }
-
-        .journey-regulator-side {
-            width: min(75vw, 380px);
-            height: min(75vw * 440/640, 380px);
-        }
-
-        .journey-dial-svg {
-            width: 100%;
-            height: 100%;
-        }
-
-        .journey-detail-card {
-            width: 100%;
-            max-width: none;
-            margin: 0;
-            padding: 12px;
-            border-radius: 24px;
-        }
-
-        .journey-year-badge {
-            font-size: 16px;
-        }
-
-        .journey-detail-title {
-            font-size: 18px;
-        }
-
-        .journey-detail-desc {
-            font-size: 12px;
-        }
-
-        .journey-tag {
-            font-size: 20px;
-            padding: 6px 10px;
-        }
-    }
-
-    @media (min-width: 465px) and (max-width: 768px){
-        .journey-regulator-side {
-            width: min(60vw, 380px);
-            height: min(60vw * 440/640, 380px);
-        }
-    }
-
-    /* Tablet JourneyPath */
-    @media (min-width: 769px) and (max-width: 1024px) {
-        .journey-regulator-side {
-            width: 500px;
-            height: 345px;
-        }
-
-        .journey-detail-card {
-            padding: 20px;
-            margin: 2rem;
-        }
-
-        .journey-detail-title {
-            font-size: 30px;
-        }
-
-        .journey-detail-desc {
-            font-size: 20px;
-        }
-    }
+    .journey-detail-title { font-size: 30px; }
+    .journey-detail-desc { font-size: 20px; }
+    .journey-tag { font-size: 18px; }
+}

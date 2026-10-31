@@ -1,65 +1,42 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import TechGrid from "./TechGrid";
+import { DiJavascript1, DiReact, DiNodejs, DiGit } from "react-icons/di";
 import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiGit,
-} from "react-icons/di";
-import {
-  SiHtml5,
-  SiPython,
-  SiAmazonwebservices,
-  SiTailwindcss,
-  SiNextdotjs,
-  SiBootstrap,
-  SiMongodb,
-  SiSpringboot,
+  SiHtml5, SiPython, SiAmazonwebservices, SiTailwindcss, SiNextdotjs,
+  SiBootstrap, SiMongodb, SiSpringboot, SiExpress, SiAmazondynamodb,
+  SiGithubactions, SiMysql, SiGooglecloud, SiPostman,
 } from "react-icons/si";
-import { 
-  FaCss3Alt,
-  FaJava
-} from "react-icons/fa";
+import { FaCss3Alt, FaJava } from "react-icons/fa";
 import { TbRobot } from "react-icons/tb";
 
-const Techstack = () => {
-  const techs = [
-    { icon: <SiHtml5 />, name: "HTML5" },
-    { icon: <FaCss3Alt />, name: "CSS3" },
-    { icon: <DiJavascript1 />, name: "JavaScript" },
-    { icon: <DiNodejs />, name: "Node.js" },
-    { icon: <DiReact />, name: "React" },
-    { icon: <span>C</span>, name: "C" },
-    { icon: <FaJava />, name: "Java" },
-    { icon: <SiSpringboot />, name: "Spring Boot" },
-    { icon: <SiPython />, name: "Python" },
-    { icon: <TbRobot />, name: "Gen AI" },
-    { icon: <DiGit />, name: "Git" },
-    { icon: <SiAmazonwebservices />, name: "AWS" },
-    { icon: <SiTailwindcss />, name: "Tailwind CSS" },
-    { icon: <SiNextdotjs />, name: "Next.js" },
-    { icon: <SiBootstrap />, name: "Bootstrap" },
-    { icon: <SiMongodb />, name: "MongoDB" },
-  ];
+const techs = [
+  // target stack first
+  { icon: <FaJava />, name: "Java" },
+  { icon: <SiSpringboot />, name: "Spring Boot" },
+  { icon: <DiReact />, name: "React" },
+  { icon: <DiNodejs />, name: "Node.js" },
+  { icon: <SiAmazonwebservices />, name: "AWS" },
+  { icon: <TbRobot />, name: "Gen AI" },
+  // backend and data
+  { icon: <SiExpress />, name: "Express.js" },
+  { icon: <SiAmazondynamodb />, name: "DynamoDB" },
+  { icon: <SiMongodb />, name: "MongoDB" },
+  { icon: <SiMysql />, name: "SQL" },
+  // cloud and workflow
+  { icon: <SiGooglecloud />, name: "Google Cloud" },
+  { icon: <SiGithubactions />, name: "CI/CD" },
+  { icon: <DiGit />, name: "Git" },
+  { icon: <SiPostman />, name: "REST APIs" },
+  // frontend and basics
+  { icon: <DiJavascript1 />, name: "JavaScript" },
+  { icon: <SiHtml5 />, name: "HTML5" },
+  { icon: <FaCss3Alt />, name: "CSS3" },
+  { icon: <SiTailwindcss />, name: "Tailwind CSS" },
+  { icon: <SiBootstrap />, name: "Bootstrap" },
+  { icon: <SiNextdotjs />, name: "Next.js" },
+  { icon: <SiPython />, name: "Python" },
+  { icon: <span>C</span>, name: "C" },
+];
 
-  return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      {techs.map((tech, index) => (
-        <Col xs={4} md={2} className="tech-icons" key={index}>
-          <div className="flip-card">
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                {tech.icon}
-              </div>
-              <div className="flip-card-back">
-                {tech.name}
-              </div>
-            </div>
-          </div>
-        </Col>
-      ))}
-    </Row>
-  );
-}
-
+const Techstack = () => <TechGrid items={techs} />;
 export default Techstack;
